@@ -39,7 +39,16 @@ Luigi.setConfig({
             viewUrl: 'http://localhost:4200/',
             loadingIndicator: {
               enabled: false,
-            }
+            },
+            children: [
+              {
+                pathSegment: 'main',
+                label: 'Orders',
+                icon: '',
+                viewUrl: 'http://localhost:4200/orders',
+                virtualTree: true,
+              }
+            ]
           },
           {
             pathSegment: 'vue',
